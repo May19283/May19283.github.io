@@ -26,7 +26,7 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-53b723186b7077b4e700.js"
+    "url": "webpack-runtime-e40031694c9d06d88fb3.js"
   },
   {
     "url": "styles.2f91a798493a13edcd2c.css"
@@ -35,14 +35,14 @@ self.__precacheManifest = [
     "url": "styles-e505cf47bda8ee0c73d0.js"
   },
   {
-    "url": "app-5228cd4093a82298bb6b.js"
+    "url": "app-e9ed7323617d2544a424.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-1595fd9bcd9902e26bdf.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "5fc7bea4d1ff3c8b08c65063566df928"
+    "revision": "99fc5957e9b1d6f20e4b67ec442ffe8f"
   },
   {
     "url": "1-74f3327beb65c7b3a490.js"
@@ -52,11 +52,11 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/404.html/page-data.json",
-    "revision": "da2b9da2ec6d37349a7d4a486a334e36"
+    "revision": "9eebf3a4720e15d4c8741408059cf6d0"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "dcbe4e0fb13b66602afe0595dd05948a"
+    "revision": "965ced825975c23a98a6b5b07ab13b0a"
   },
   {
     "url": "manifest.json",
@@ -86,7 +86,7 @@ const navigationRoute = new workbox.routing.NavigationRoute(({ event }) => {
   return idbKeyval.get(WHITELIST_KEY).then((customWhitelist = []) => {
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      const offlineShell = `/blog/offline-plugin-app-shell-fallback/index.html`
+      const offlineShell = `/may19283.github.io/offline-plugin-app-shell-fallback/index.html`
       const cacheName = workbox.core.cacheNames.precache
 
       return caches.match(offlineShell, { cacheName }).then(cachedResponse => {
@@ -158,7 +158,7 @@ const messageApi = {
 
     pathnames = pathnames.map(({ pathname, includesPrefix }) => {
       if (!includesPrefix) {
-        return `/blog${pathname}`
+        return `/may19283.github.io${pathname}`
       } else {
         return pathname
       }
